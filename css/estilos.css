@@ -1,0 +1,364 @@
+@charset "UTF-8";
+
+
+body{
+    background: #ededed;
+/*    background: #c7c6c9;*/
+    background-attachment:fixed;
+    font-family: "Open Sans";
+    font-size: 16px;
+}
+
+
+nav{
+    padding: 0 6em 0 2em ;
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    z-index: 3;
+        
+        
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 0 1em 0 0;
+    
+}
+
+nav ul li a{
+    color: #c2c2c2;
+    display: block;
+    padding: 0.5em 0.8em;
+    text-decoration: none;
+    transition: .8s;
+    }
+
+nav ul li a:hover{
+    color: #858585;
+}
+
+
+
+footer{
+    z-index: 1;        
+    position: fixed;
+    padding: 10px 0px 5px 0px;
+    bottom: 0;
+    margin: 0 auto;
+    width: 100%;
+}
+
+footer h1{
+    font-weight: 300;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.7);
+    letter-spacing: 3px;
+    text-align: center;
+
+}
+
+
+img {
+  display: block;
+  width: 100%;
+}
+
+
+.container {
+  position: a;
+  max-width: 45%;
+  margin: 0 auto;
+  padding: 8% 5% 5% 5%;
+}
+
+
+.scene {
+  padding: 0;
+  margin: 0;
+}
+
+
+.scene,
+.layer {
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+
+.waves{
+    animation: wave 4s 0.1s infinite linear;
+    background-image:  url(../images/wave.png);
+    background-repeat: repeat-x;
+    position: absolute;
+    width: 100%;
+    height: 200px;        
+    max-height: 20%;
+    bottom: 0;
+    overflow: visible;
+        
+        
+
+}
+
+
+
+}
+
+
+.waves2{
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-image:  url(../images/wave.png);
+    background-repeat: repeat-x;
+    height: 20%;
+    z-index: 0;
+    
+
+}
+
+.programas{
+    padding-top: 50%;
+}
+
+.nombre{
+    padding-top: 20%;
+        
+}
+
+.cloud{
+    padding-top: 15%;
+        
+}
+
+
+.cloud2{
+    max-width: 600px;
+    padding: 0 0 0 20%;
+    -webkit-animation: wave 10s 0.1s infinite linear;
+    -moz-animation: wave 10s 0.1s infinite linear;
+    animation: wave 10s 0.1s infinite linear;
+
+            
+}
+
+
+@-webkit-keyframes cloud2 {
+  0% {
+    -webkit-transform: rotateZ(0deg) translate3d(0,1%,0) rotateZ(0deg);
+    -moz-transform: rotateZ(0deg) translate3d(0,1%,0) rotateZ(0deg);
+    transform: rotateZ(0deg) translate3d(0,1%,0) rotateZ(0deg);
+      opacity: (1);
+  }
+
+  100% {
+    -webkit-transform: rotateZ(360deg) translate3d(0,1%,0) rotateZ(-45deg);
+    -moz-transform: rotateZ(360deg) translate3d(0,1%,0) rotateZ(-45deg);
+    transform: rotateZ(360deg) translate3d(0,1%,0) rotateZ(-45deg);
+      opacity: (0);
+  }
+}
+
+@-moz-keyframes cloud2 {
+  0% {
+    -webkit-transform: rotateZ(0deg) translate3d(0,10%,0) rotateZ(0deg);
+    -moz-transform: rotateZ(0deg) translate3d(0,10%,0) rotateZ(0deg);
+    transform: rotateZ(0deg) translate3d(0,10%,0) rotateZ(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotateZ(360deg) translate3d(0,10%,0) rotateZ(-360deg);
+    -moz-transform: rotateZ(360deg) translate3d(0,10%,0) rotateZ(-360deg);
+    transform: rotateZ(360deg) translate3d(0,10%,0) rotateZ(-360deg);
+  }
+}
+
+@-ms-keyframes cloud2 {
+  0% {
+    -webkit-transform: rotateZ(0deg) translate3d(0,10%,0) rotateZ(0deg);
+    -moz-transform: rotateZ(0deg) translate3d(0,10%,0) rotateZ(0deg);
+    transform: rotateZ(0deg) translate3d(0,10%,0) rotateZ(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotateZ(360deg) translate3d(0,10%,0) rotateZ(-360deg);
+    -moz-transform: rotateZ(360deg) translate3d(0,10%,0) rotateZ(-360deg);
+    transform: rotateZ(360deg) translate3d(0,10%,0) rotateZ(-360deg);
+  }
+}
+
+@keyframes cloud2 {
+  0% {
+    -webkit-transform: rotateZ(0deg) translate3d(0,10%,0) rotateZ(0deg);
+    -moz-transform: rotateZ(0deg) translate3d(0,10%,0) rotateZ(0deg);
+    transform: rotateZ(0deg) translate3d(0,10%,0) rotateZ(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotateZ(360deg) translate3d(0,10%,0) rotateZ(-360deg);
+    -moz-transform: rotateZ(360deg) translate3d(0,10%,0) rotateZ(-360deg);
+    transform: rotateZ(360deg) translate3d(0,10%,0) rotateZ(-360deg);
+  }
+}
+
+
+
+
+
+.me{
+    max-width: 600px;
+    padding: 30% 0 0 20%;
+        
+}
+
+
+@-webkit-keyframes wave {
+  0% {
+    -webkit-transform: rotateZ(0deg) translate3d(0,10%,0) rotateZ(0deg);
+    -moz-transform: rotateZ(0deg) translate3d(0,10%,0) rotateZ(0deg);
+    transform: rotateZ(0deg) translate3d(0,10%,0) rotateZ(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotateZ(360deg) translate3d(0,10%,0) rotateZ(-360deg);
+    -moz-transform: rotateZ(360deg) translate3d(0,10%,0) rotateZ(-360deg);
+    transform: rotateZ(360deg) translate3d(0,10%,0) rotateZ(-360deg);
+  }
+}
+
+
+
+
+
+
+
+
+        
+
+@media screen and (max-width:960px){
+    body{
+        background-size: 80%;      
+    }
+    
+    
+    .container{
+        max-width: 50%;
+        padding: 10% 1% 1% 1%;
+        margin: 0 auto;
+        max-height: 65%
+    
+}
+    
+    .waves{
+        overflow: hidden;
+        position: absolute;
+        width: 100%;
+        background-image:  url(../images/wave.png);
+        z-index: 1;
+        max-height: 30%;
+        bottom: 0;
+    }
+    
+    .waves2{
+        display: none;
+    }
+    
+
+    footer h1{
+        font-size: 12px;
+        
+            
+    }
+    
+  
+    
+@media screen and (max-width:768px){
+    body{
+        background-size: 80%;      
+    }
+    
+    
+    .container{
+        max-width: 70%;
+        padding: 20% 5% 5% 5%;
+        margin: 0 auto;
+        max-height: 65%
+    
+}
+    
+    .waves{
+        overflow: hidden;
+        position: absolute;
+        width: 90%;
+        background-image:  url(../images/wave.png);
+        z-index: 1;
+        max-height: 30%;
+        bottom: 0;
+    }
+    
+    .waves2{
+        display: none;
+    }
+    
+
+    footer h1{
+        font-size: 12px;
+        display: none;
+        
+            
+    }
+    
+    
+    
+    @media screen and (max-width:480px){
+    body{
+        background-size: 80%;      
+    }
+    
+    
+    .container{
+        max-width: 80%;
+        padding: 40% 1% 1% 1%;
+        margin: 0 auto;
+        max-height: 65%
+    
+}
+    
+    .waves{
+        overflow: hidden;
+        position: absolute;
+        width: 100%;
+        background-image:  url(../images/wave.png);
+        z-index: 1;
+        max-height: 30%;
+        bottom: 0;
+    }
+    
+    .waves2{
+        display: none;
+    }
+    
+
+    footer h1{
+        font-size: 12px;
+        display: none;
+        
+            
+    }
+        
+    .cloud2{
+        padding: -4%;
+        position: relative;
+            
+    }    

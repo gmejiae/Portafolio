@@ -1,0 +1,78 @@
+
+.cloud{
+    -webkit-transform-origin: 50% 90%;
+      -moz-transform-origin: 50% 90%;
+      transform-origin: 50% 90%;
+      -webkit-animation: cloud 4s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+      -moz-animation: cloud 4s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+      animation: cloud 4s 0.1s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+}
+
+@-webkit-keyframes cloud {
+  0% {
+    -webkit-transform: translate3d(15%,0,0) rotateZ(10deg);
+    -moz-transform: translate3d(15%,0,0) rotateZ(10deg);
+    transform: translate3d(15%,0,0) rotateZ(10deg);
+  }
+
+  100% {
+    -webkit-transform: translate3d(-15%,0,0) rotateZ(-10deg);
+    -moz-transform: translate3d(-15%,0,0) rotateZ(-10deg);
+    transform: translate3d(-15%,0,0) rotateZ(-10deg);
+  }
+}
+
+@-moz-keyframes cloud {
+  0% {
+    -webkit-transform: translate3d(15%,0,0) rotateZ(10deg);
+    -moz-transform: translate3d(15%,0,0) rotateZ(10deg);
+    transform: translate3d(15%,0,0) rotateZ(10deg);
+  }
+
+  100% {
+    -webkit-transform: translate3d(-15%,0,0) rotateZ(-10deg);
+    -moz-transform: translate3d(-15%,0,0) rotateZ(-10deg);
+    transform: translate3d(-15%,0,0) rotateZ(-10deg);
+  }
+}
+
+@-ms-keyframes cloud {
+  0% {
+    -webkit-transform: translate3d(15%,0,0) rotateZ(10deg);
+    -moz-transform: translate3d(15%,0,0) rotateZ(10deg);
+    transform: translate3d(15%,0,0) rotateZ(10deg);
+  }
+
+  100% {
+    -webkit-transform: translate3d(-15%,0,0) rotateZ(-10deg);
+    -moz-transform: translate3d(-15%,0,0) rotateZ(-10deg);
+    transform: translate3d(-15%,0,0) rotateZ(-10deg);
+  }
+}
+
+@keyframes cloud {
+  0% {
+    -webkit-transform: translate3d(15%,0,0) rotateZ(10deg);
+    -moz-transform: translate3d(15%,0,0) rotateZ(10deg);
+    transform: translate3d(15%,0,0) rotateZ(10deg);
+  }
+
+  100% {
+    -webkit-transform: translate3d(-15%,0,0) rotateZ(-10deg);
+    -moz-transform: translate3d(-15%,0,0) rotateZ(-10deg);
+    transform: translate3d(-15%,0,0) rotateZ(-10deg);
+  }
+}
+
+
+
+
+
+
+
+
+    <div class="waves_container">
+        <div class="waves"></div>
+        <!--<div class="waves2"></div>-->
+    </div>  
