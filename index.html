@@ -11,63 +11,105 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/estilos.css">
         <link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
         <!--<script src="js/prefixfree.min.js"></script>-->
 
     </head>
 
-    <body>
     
+    
+    
+    <body>
+      
 
-    <!---navegacion--->    
+<div id="st-container" class="st-container">
+    
+    
+    
+    
+    <nav class="st-menu st-effect-4" id="menu-4">
+        <h2 class="icon icon-lab">Gabo</h2>
+        <ul>
+            <li><a class="icon icon-portafolio" href="#">Portafolio</a></li>
+            <li><a class="icon icon-cv" href="#">Curriculum</a></li>
+            <li><a class="icon icon-behance" href="#">Behance</a></li>
+            <li><a class="icon icon-contact" href="#">Contact</a></li>
+        </ul>
+    </nav>
         
 
+<!-- content push wrapper -->
+<div class="st-pusher">
 
-<!---///navegacion--->       
-        
-	<div id="container" class="container">
-		<ul id="scene" class="scene">
-			<li class="layer nombre" data-depth="0.40"><img src="images/p1.png"></li>
-			<li class="layer cloud" data-depth="0.60"><img src="images/p2.png"></li>
-			<li class="layer cloud2" data-depth="0.80"><img src="images/p3.png"></li>
-			<li class="layer me" data-depth="0.80"><img src="images/p3b.png"></li>
-			<li class="layer programas" data-depth="1.00"><img src="images/p4.png"></li>
 
-		</ul>
-  
-        
-	</div>
-        
-        
+    <div class="st-content"><!-- this is the wrapper for the content -->
+        <div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
+
+
+    <div id="container" class="container">
+        <ul id="scene" class="scene">
+            <li class="layer nombre" data-depth="0.40"><img src="images/p1.png"></li>
+            <li class="layer cloud" data-depth="0.60"><img src="images/p2.png"></li>
+            <li class="layer cloud2" data-depth="0.80"><img src="images/p3.png"></li>
+            <li class="layer me" data-depth="0.80"><img src="images/p3b.png"></li>
+            <li class="layer programas" data-depth="1.00"><img src="images/p4.png"></li>
+
+        </ul>
+
+
+    </div>
+            
+
+
+<!--
         <nav  class="animated fadeInDown">
             <ul>
                 <li><a href="#">Portafolio</a></li>
                 <li><a href="#">Contacto</a></li>
                 <li><a href="#">Facebook</a></li>
-            
+
             </ul>
         </nav>              
+-->
 
-        
-    <div class="waves_container">
-        <div class="waves"></div>
-    </div>  
- 
- 
-        
-        
+        <div id="st-trigger-effects" class="btn_menu">
+
+            <button data-effect="st-effect-4"><a class="icon-menu"></a></button>
+
+
+        </div>        
+
+
+    <!--
+        <div class="waves_container">
+            <div class="waves"></div>
+        </div>  
+
+    -->
+
+
+
 <!---Footer--->  
-        
-        <footer>
-            <h1>
-                Diseño por Gabriel Mejía Todos los derechos reservados 2014
-            </h1>
-            
-            
 
-        </footer>
+            <footer>
+                <h1>
+                    Diseño por Gabriel Mejía Todos los derechos reservados 2014
+                </h1>
+            </footer>
+            
+            
         
-<!---///Footer--->        
-        
+<!---///Footer--->    
+
+
+            <div class="main clearfix">
+            </div><!-- /main -->
+        </div><!-- /st-content-inner -->
+    </div><!-- /st-content -->
+</div><!-- /st-pusher -->
+</div><!-- /st-container -->
+    
 
 	<!-- Scripts -->
 	<script src="js/parallax.js"></script>
@@ -78,6 +120,9 @@
 	var parallax = new Parallax(scene);
 
 	</script>
+
+		<script src="js/classie.js"></script>
+		<script src="js/sidebarEffects.js"></script>        
         
 
     </body>
