@@ -16,11 +16,9 @@ body,
 
 .st-content {
 	overflow-y: scroll;
-    background: white;
-/*    background: #222527;*/
-
-    background-attachment:fixed;
-
+    background: #d5d4d5;
+	background-image: url(../images/background.jpg)
+	
 }
 
 .st-content,

@@ -9,7 +9,6 @@
     url("../fonts/portafolio.svg#portafolio") format("svg");
   font-weight: normal;
   font-style: normal;
-
 }
 
 [data-icon]:before {
@@ -69,17 +68,48 @@
 }
 
 
+/*PRE LOADER*/
+
+.preloader {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: #ffc600;
+    top: 0;
+    left: 0;
+ }
+
+.preloader img{
+    position: absolute;
+    width: 30px;
+    top: 50%;
+    left: 50%; 
+	margin: -25px -15px;
+    align-content: center;
+}
+
+.preloader h1{
+    position: relative;
+    top: 50%;
+    text-align: center;
+    font-weight: 200;
+    letter-spacing: -3px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+/* END OF PRE LOADER*/
+
+
 body{
-/*
-    background: #222527 url('../images/bg_body.png');
-    background-attachment:fixed;
-*/
     font-family: "Open Sans";
     font-size: 16px;
+
 }
 
 
-nav{
+.st-menu{
     padding: 0 6em 0 2em ;
     position: absolute;
     top: 1em;
@@ -87,7 +117,7 @@ nav{
     z-index: 3;
 }
 
-nav ul{
+.st-menu ul{
     list-style: none;
     margin: 0;
     padding: 0;
@@ -96,43 +126,22 @@ nav ul{
 
 }
 
-nav ul li{
+.st-menu ul li{
     display: inline-block;
     margin: 0 1em 0 0;
     width: 250px;
 }
 
-nav ul li a{
+.st-menu ul li a{
     color: #c2c2c2;
     display: block;
     padding: 0.5em 0.8em;
     text-decoration: none;
     transition: .8s;
-    }
+}
 
-nav ul li a:hover{
+.st-menu ul li a:hover{
     color: #858585;
-    
-}
-
-
-
-footer{
-    z-index: 1;        
-    position: fixed;
-    padding: 10px 0px 30px 0px;
-    bottom: 0;
-    margin: 0 auto;
-    width: 100%;
-}
-
-footer h1{
-    font-weight: 400;
-    font-size: 12px;
-    color: rgba(255, 255, 255, 0.7);
-    letter-spacing: 3px;
-    text-align: center;
-
 }
 
 
@@ -140,8 +149,6 @@ img {
   display: block;
   width: 100%;
 }
-
-
 
 
 button{
@@ -159,6 +166,72 @@ button{
 }
 
 
+/*menu desktop*/
+
+
+.menu-desktop{
+	height: 80px;
+	position: absolute;
+	top: 0;
+    padding: 0 15% 0 2em ;
+    z-index: 3;
+	text-align: right;
+	width: 100%;
+	-webkit-animation-delay:.7s;
+	-moz-animation-delay:.7s;
+	-o-animation-delay:.7s;
+	-ms-animation-delay:.7s;
+}
+
+.menu-desktop h1{
+	text-align: left;
+	position: fixed;
+	color: white;
+	font-weight: 100;
+}
+
+.menu-desktop ul{
+    list-style: none;
+    padding: 0.7em;
+    position: relative;
+    left: 0;
+
+}
+
+.menu-desktop ul li{
+	display: inline;
+	margin: 0 0 0 0;
+}
+
+.menu-desktop ul li a{
+    padding: 2em 2em;
+    text-decoration: none;
+    transition: .8s;
+	outline: none;
+	color: white;
+	text-transform: uppercase;
+	text-shadow: 0 0 1px rgba(255,255,255,0.1);
+	letter-spacing: 1px;
+	font-weight: 100;
+	-webkit-transition: background 0.3s, box-shadow 0.3s;
+	transition: background 0.3s, box-shadow 0.3s;
+}
+
+.menu-desktop ul li a:before{
+    color: #7d5b00;
+	font-size: 1.2em;
+}
+
+.menu-desktop ul li a:hover {
+	background: rgba(0,0,0,0.2);
+	box-shadow: inset 0 -1px rgba(0,0,0,0);
+	color: #fff;
+}
+
+
+/* END menu desktop*/
+
+
 
 .btn_menu {
     position: absolute;
@@ -169,10 +242,11 @@ button{
 }
 
 .container {
-  position: a;
-  max-width: 50%;
-  margin: 0 auto;
-  padding: 8% 5% 5% 5%;
+/*	max-width: 55%;*/
+	margin: auto;
+	padding: 8% 5% 5% 5%;
+	min-width: 60%;
+	max-width: 60%;
 }
 
 
@@ -192,18 +266,6 @@ button{
 }
 
 
-.waves{
-    background-image:  url(../images/wave.png);
-    background-repeat: repeat-x;
-    position: absolute;
-    width: 100%;
-    height: 200px;        
-    max-height: 20%;
-    bottom: 0;
-    overflow: visible;
-}
-
-
 .me{
     max-width: 600px;
     padding: 30% 0 0 20%;
@@ -214,138 +276,31 @@ button{
 }
 
 .nombre{
-    padding-top: 20%;
-}
-
-.cloud{
-    padding-top: 15%;
-        
+    padding-top: 10%;
 }
 
 .cloud2{
-    max-width: 600px;
-    padding: 0 0 0 20%;
+    padding: 0 0 0 0;
 }
 
 
 
-.btn_menu{
-    visibility: hidden;
+
+footer{
+    z-index: 1;        
+    position: fixed;
+    padding: 10px 0px 30px 0px;
+    bottom: 0;
+    margin: 0 auto;
+    width: 100%;
 }
 
-
-
-/*WEB media query*/
-        
-
-@media screen and (max-width:960px){
-    body{
-        background-size: 80%;      
-    }
-    
-    
-    .container{
-        max-width: 50%;
-        padding: 10% 1% 1% 1%;
-        margin: 0 auto;
-        max-height: 65%;
-    
+footer h1{
+    font-weight: 400;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.3);
+    letter-spacing: px;
+    text-align: center;
 }
-    
-    .waves{
-        overflow: hidden;
-        position: absolute;
-        width: 100%;
-        background-image:  url(../images/wave.png);
-        z-index: 1;
-        max-height: 30%;
-        bottom: 0;
-    }
-    
 
-    footer h1{
-        font-size: 12px;
-        
-            
-    }
-    
-  /*TABLET media query*/
-
-    
-@media screen and (max-width:768px){
-    body{
-        background-size: 80%;      
-    }
-    
-
-    .btn_menu{
-        visibility: visible;
-    }
-    
-    
-    
-    .container{
-        max-width: 70%;
-        padding: 20% 1% 1% 1%;
-        margin: 0 auto;
-        max-height: 65%
-    
-}
-    
-    .waves{
-        overflow: hidden;
-        position: absolute;
-        width: 90%;
-        background-image:  url(../images/wave.png);
-        z-index: 1;
-        max-height: 30%;
-        bottom: 0;
-    }
-    
-
-    footer h1{
-        font-size: 12px;
-        display: none;
-        
-            
-    }
-    
-    
-/*Mobile media query*/
-    
-    @media screen and (max-width:480px){
-    
-    .st-content{
-        background-size: 30%;      
-    }
-    
-    
-    .container{
-        max-width: 95%;
-        padding-top: 40%;
-        margin: 0 auto;
-    
-}
-    
-    .waves{
-        overflow: hidden;
-        position: absolute;
-        width: 100%;
-        background-image:  url(../images/wave.png);
-        z-index: 1;
-        max-height: 30%;
-        bottom: 0;
-    }
-    
-
-    footer h1{
-        font-size: 12px;
-        display: none;
-    }
-        
-    .cloud2{
-        padding: -4%;
-        position: relative;
-            
-    }    
 

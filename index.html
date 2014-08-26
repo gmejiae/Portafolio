@@ -10,17 +10,25 @@
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700,300' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="css/queries.css">
         <link rel="stylesheet" href="css/animate.css">
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
 		<script src="js/modernizr.custom.js"></script>
-        <!--<script src="js/prefixfree.min.js"></script>-->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
 
     </head>
 
     
+<div class='preloader'>
+   <img src='images/loading.gif' alt='loading image'/>
+    <h1>Cargando...</h1>
+</div>
+
     
     
     <body>
+        
       
 
 <div id="st-container" class="st-container">
@@ -28,13 +36,12 @@
     
     
     
-    <nav class="st-menu st-effect-4" id="menu-4">
+    <nav class="st-menu st-effect-4 animated fadeInDown" id="menu-4">
         <h2 class="icon icon-lab">Gabo</h2>
         <ul>
             <li><a class="icon icon-portafolio" href="#">Portafolio</a></li>
-            <li><a class="icon icon-cv" href="#">Curriculum</a></li>
-            <li><a class="icon icon-behance" href="#">Behance</a></li>
-            <li><a class="icon icon-contact" href="#">Contact</a></li>
+            <li><a class="icon icon-behance" href="https://www.behance.net/gmejiae" target="_blank">Behance</a></li>
+            <li><a class="icon icon-contact" href="mailto:gmejiae@gmail.com?Subject=Hola" target="_top">Contact</a></li>
         </ul>
     </nav>
         
@@ -47,31 +54,45 @@
         <div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
 
 
-    <div id="container" class="container">
+    <div id="container" class="container animated fadeInDown">
         <ul id="scene" class="scene">
             <li class="layer nombre" data-depth="0.40"><img src="images/p1.png"></li>
-            <li class="layer cloud" data-depth="0.60"><img src="images/p2.png"></li>
-            <li class="layer cloud2" data-depth="0.80"><img src="images/p3.png"></li>
-            <li class="layer me" data-depth="0.80"><img src="images/p3b.png"></li>
-            <li class="layer programas" data-depth="1.00"><img src="images/p4.png"></li>
-
+            <li class="layer cloud" data-depth="0.50"><img src="images/p4.png"></li>           
+            <li class="layer cloud" data-depth="0.80"><img src="images/p2.png"></li>
+            <li class="layer cloud2" data-depth="1.00"><img src="images/p3.png"></li>
         </ul>
 
+<!--
+    <nav id="" class="">
+        <ul id="desk" class="desk">
+            <li><a class="icon icon-portafolio" href='#'>Portafolio</a></li>
+            <li><a class="icon icon-cv" href='#'>Descargar CV</a></li>
+            <li><a class="icon icon-contact" href='#'>Contacto</a></li>
 
+
+        
+        
+        </ul>
+        
+    </nav>
+-->
+         
+        
     </div>
             
 
+		<div class="menu-desktop animated fadeInDown">
+			<h1>GABO.</h1>
+			<nav>
+				<ul>
+					<li><a class="icon icon-portafolio" href="#">Portafolio</a></li>
+					<li><a class="icon icon-behance" href="#">Behance</a></li>
+					<li><a class="icon icon-contact" href="#">Contacto</a></li>
 
-<!--
-        <nav  class="animated fadeInDown">
-            <ul>
-                <li><a href="#">Portafolio</a></li>
-                <li><a href="#">Contacto</a></li>
-                <li><a href="#">Facebook</a></li>
-
-            </ul>
-        </nav>              
--->
+				</ul>
+			</nav>
+		</div>
+			
 
         <div id="st-trigger-effects" class="btn_menu">
 
@@ -88,9 +109,8 @@
 
     -->
 
-
-
-<!---Footer--->  
+            
+<!---Footer-->  
 
             <footer>
                 <h1>
@@ -98,9 +118,7 @@
                 </h1>
             </footer>
             
-            
-        
-<!---///Footer--->    
+<!---///Footer-->    
 
 
             <div class="main clearfix">
@@ -112,7 +130,7 @@
     
 
 	<!-- Scripts -->
-	<script src="js/parallax.js"></script>
+    <script src="js/parallax.js"></script>
 	<script>
 
 	// Pretty simple huh?
@@ -126,4 +144,6 @@
         
 
     </body>
+
+
 </html>
