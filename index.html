@@ -15,100 +15,88 @@
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
 		<script src="js/modernizr.custom.js"></script>
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-
-
+		<script src="js/wow.js"></script>
+		<script>
+		 new WOW().init();
+		</script>
+		
     </head>
 
-    
+<!---PRELOADER-->  
+   
 <div class='preloader'>
    <img src='images/loading.gif' alt='loading image'/>
     <h1>Cargando...</h1>
 </div>
+	
+<!---//////PRELOADER-->  	
 
-    
-    
     <body>
-        
-      
-
+		
 <div id="st-container" class="st-container">
-    
-    
-    
-    
-    <nav class="st-menu st-effect-4 animated fadeInDown" id="menu-4">
-        <h2 class="icon icon-lab">Gabo</h2>
+    <nav class="st-menu st-effect-4 wow fadeInDown" id="menu-4">
+        <h2 class="icon icon-portafolio">Gabo</h2>
         <ul>
             <li><a class="icon icon-portafolio" href="#">Portafolio</a></li>
-            <li><a class="icon icon-behance" href="https://www.behance.net/gmejiae" target="_blank">Behance</a></li>
-            <li><a class="icon icon-contact" href="mailto:gmejiae@gmail.com?Subject=Hola" target="_top">Contact</a></li>
+            <li><a class="icon icon-cv" href="#" target="_blank">Descargar CV</a></li>
+            <li><a class="icon icon-contact" href="contactame.html" target="_top">Contáctame</a></li>
         </ul>
     </nav>
         
-
 <!-- content push wrapper -->
 <div class="st-pusher">
 
-
     <div class="st-content"><!-- this is the wrapper for the content -->
         <div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
-
-
-    <div id="container" class="container animated fadeInDown">
-        <ul id="scene" class="scene">
-            <li class="layer nombre" data-depth="0.40"><img src="images/p1.png"></li>
-            <li class="layer cloud" data-depth="0.50"><img src="images/p4.png"></li>           
-            <li class="layer cloud" data-depth="0.80"><img src="images/p2.png"></li>
-            <li class="layer cloud2" data-depth="1.00"><img src="images/p3.png"></li>
-        </ul>
-
-<!--
-    <nav id="" class="">
-        <ul id="desk" class="desk">
-            <li><a class="icon icon-portafolio" href='#'>Portafolio</a></li>
-            <li><a class="icon icon-cv" href='#'>Descargar CV</a></li>
-            <li><a class="icon icon-contact" href='#'>Contacto</a></li>
-
-
-        
-        
-        </ul>
-        
-    </nav>
--->
-         
-        
-    </div>
-            
-
-		<div class="menu-desktop animated fadeInDown">
-			<h1>GABO.</h1>
-			<nav>
-				<ul>
-					<li><a class="icon icon-portafolio" href="#">Portafolio</a></li>
-					<li><a class="icon icon-behance" href="#">Behance</a></li>
-					<li><a class="icon icon-contact" href="#">Contacto</a></li>
-
-				</ul>
-			</nav>
-		</div>
+				<div id="container" class="container wow fadeInDown" data-wow-duration='1s'>
+					<ul id="scene" class="scene">
+						<li class="layer welcome" data-depth="0.30"><img src="images/welcome.png"></li>
+						<li class="layer isla" data-depth="0.40"><img src="images/p1.png"></li>
+						<li class="layer cloud" data-depth="0.50"><img src="images/p4.png"></li>           
+						<li class="layer cloud" data-depth="1.80"><img src="images/p2.png"></li>
+						<li class="layer cloud2" data-depth="1.40"><img src="images/p3.png"></li>
+					</ul>
+				</div>
 			
+<!--
+			<div class="landing">
+				<img src="./images/p1%20original.png">			
+			
+			</div>
+-->
+
+		<div class="b1 botones">
+			<img class="a01 ng" src="images/bt_compose2_2x.png">
+			<img class="b01 ng" src="images/bt_speed_dial_2x.png">
+		</div>
+		
+ 
+<!---SOCIAL MEDIA-->  
+	<div class="social-media" data-wow-delay='1s'>
+		<div class="icons-sm behance icon icon-behance"></div>
+		<div class="icons-sm dribble icon icon-behance"></div>
+	</div>			
+
+<!---SOCIAL MEDIA-->  			
+			
+<!---DESKTOP MENU-->  
+
+	<div class="menu-desktop animated fadeInDown wow">
+		<h1 class="icon icon-portafolio">GABO.</h1>
+		<nav>
+			<ul>
+				<li><a class="icon icon-portafolio" href="#">Portafolio</a></li>
+				<li><a class="icon icon-cv" href="#">Descargar CV</a></li>
+				<li><a class="icon icon-contact" href="contactame.html">Contáctame</a></li>
+			</ul>
+		</nav>
+	</div>
+
+<!---/////DESKTOP MENU-->  
 
         <div id="st-trigger-effects" class="btn_menu">
-
             <button data-effect="st-effect-4"><a class="icon-menu"></a></button>
-
-
         </div>        
-
-
-    <!--
-        <div class="waves_container">
-            <div class="waves"></div>
-        </div>  
-
-    -->
-
             
 <!---Footer-->  
 
@@ -132,16 +120,13 @@
 	<!-- Scripts -->
     <script src="js/parallax.js"></script>
 	<script>
-
 	// Pretty simple huh?
 	var scene = document.getElementById('scene');
 	var parallax = new Parallax(scene);
-
 	</script>
-
 		<script src="js/classie.js"></script>
-		<script src="js/sidebarEffects.js"></script>        
-        
+		<script src="js/sidebarEffects.js"></script>
+		<script src="js/portafolio.js"></script>        
 
     </body>
 

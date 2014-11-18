@@ -62,7 +62,7 @@
 	text-transform: none;
 	line-height: 1;
 	vertical-align: bottom;
-	margin-right: 0.8em;
+	margin-right: 0.5em;
 	font-size: 1.2em;
 	-webkit-font-smoothing: antialiased;
 }
@@ -108,6 +108,10 @@ body{
 
 }
 
+html, html a {
+    -webkit-font-smoothing: antialiased !important;
+
+}
 
 .st-menu{
     padding: 0 6em 0 2em ;
@@ -143,6 +147,50 @@ body{
 .st-menu ul li a:hover{
     color: #858585;
 }
+
+
+
+.social-media{
+	position: fixed;
+	z-index: 99999;
+	bottom: 0%;
+	width: 100%;
+	padding: 0 0 2.4em 0;
+	text-align: center;
+}
+
+.icons-sm{
+	display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+	width: 60px;
+    height: 60px;
+    overflow: hidden;
+	margin-right: .5em;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+	z-index: 5;
+	font-size: 1.4em;
+}
+
+.behance{
+	background-color: #1769FF;
+	padding: 0.6em .7em;
+/*
+	text-shadow: rgb(21,82,194) 1px 1px,
+    rgb(21,82,194) 2px 2px, rgb(21,82,194) 3px 3px,    rgb(21,82,194) 4px 4px,    rgb(21,82,194) 5px 5px,    rgb(21,82,194) 6px 6px,    rgb(21,82,194) 7px 7px,    rgb(21,82,194) 8px 8px,    rgb(21,82,194) 9px 9px,    rgb(21,82,194) 10px 10px,    rgb(21,82,194) 11px 11px,    rgb(21,82,194) 12px 12px,    rgb(21,82,194) 13px 13px,   rgb(21,82,194) 14px 14px,    rgb(21,82,194) 15px 15px,    rgb(21,82,194) 16px 16px,    rgb(21,82,194) 17px 17px,    rgb(21,82,194) 18px 18px,    rgb(21,82,194) 19px 19px,    rgb(21,82,194) 20px 20px,    rgb(21,82,194) 21px 21px,    rgb(21,82,194) 22px 22px,    rgb(21,82,194) 23px 23px,    rgb(21,82,194) 24px 24px,    rgb(21,82,194) 25px 25px,    rgb(21,82,194) 26px 26px,    rgb(21,82,194) 27px 27px,    rgb(21,82,194) 28px 28px,    rgb(21,82,194) 29px 29px,  rgb(21,82,194) 30px 30px,    rgb(21,82,194) 31px 31px,    rgb(21,82,194) 32px 32px,    rgb(21,82,194) 33px 33px,    rgb(21,82,194) 34px 34px,    rgb(21,82,194) 35px 35px,    rgb(21,82,194) 36px 36px,    rgb(21,82,194) 37px 37px,    rgb(21,82,194) 38px 38px,    rgb(21,82,194) 39px 39px,    rgb(21,82,194) 40px 40px,    rgb(21,82,194) 41px 41px,    rgb(21,82,194) 42px 42px,    rgb(21,82,194) 43px 43px,    rgb(21,82,194) 44px 44px,    rgb(21,82,194) 45px 45px,    rgb(21,82,194) 46px 46px,    rgb(21,82,194) 47px 47px,    rgb(21,82,194) 48px 48px,    rgb(21,82,194) 49px 49px,    rgb(21,82,194) 50px 50px,    rgb(21,82,194) 51px 51px,    rgb(21,82,194) 52px 52px,    rgb(21,82,194) 53px 53px,    rgb(21,82,194) 54px 54px,    rgb(21,82,194) 55px 55px,    rgb(21,82,194) 56px 56px,    rgb(21,82,194) 57px 57px,    rgb(21,82,194) 58px 58px,    rgb(21,82,194) 59px 59px,    rgb(21,82,194) 60px 60px,    rgb(21,82,194) 61px 61px,    rgb(21,82,194) 62px 62px,    rgb(21,82,194) 63px 63px,    rgb(21,82,194) 64px 64px,    rgb(21,82,194) 65px 65px,    rgb(21,82,194) 66px 66px,    rgb(21,82,194) 67px 67px,    rgb(21,82,194) 68px 68px,    rgb(21,82,194) 69px 69px,    rgb(21,82,194) 70px 70px,    rgb(21,82,194) 71px 71px,    rgb(21,82,194) 72px 72px,    rgb(21,82,194) 73px 73px,    rgb(21,82,194) 74px 74px,    rgb(21,82,194) 75px 75px,    rgb(21,82,194) 76px 76px,    rgb(21,82,194) 77px 77px,    rgb(21,82,194) 78px 78px,    rgb(21,82,194) 79px 79px,    rgb(21,82,194) 80px 80px,    rgb(21,82,194) 81px 81px,    rgb(21,82,194) 82px 82px,    rgb(21,82,194) 83px 83px,    rgb(21,82,194) 84px 84px,    rgb(21,82,194) 85px 85px,    rgb(21,82,194) 86px 86px,    rgb(21,82,194) 87px 87px,    rgb(21,82,194) 88px 88px,    rgb(21,82,194) 89px 89px,    rgb(21,82,194) 90px 90px,    rgb(21,82,194) 91px 91px,    rgb(21,82,194) 92px 92px,    rgb(21,82,194) 93px 93px,    rgb(21,82,194) 94px 94px,    rgb(21,82,194) 95px 95px,    rgb(21,82,194) 96px 96px,    rgb(21,82,194) 97px 97px,    rgb(21,82,194) 98px 98px,    rgb(21,82,194) 99px 99px,    rgb(21,82,194) 100px 100px;
+*/
+
+}
+
+.dribble{
+	background-color: #1AB7EA;
+	padding: 0.6em .7em;
+
+}
+
 
 
 img {
@@ -181,6 +229,7 @@ button{
 	-moz-animation-delay:.7s;
 	-o-animation-delay:.7s;
 	-ms-animation-delay:.7s;
+	overflow: hidden;
 }
 
 .menu-desktop h1{
@@ -188,6 +237,16 @@ button{
 	position: fixed;
 	color: white;
 	font-weight: 100;
+	top: 0;
+	left: 10%;
+}
+
+
+.menu-desktop h1:before{
+    color: #7d5b00;
+	font-size: 1.2em;
+	position: absolute;
+	margin: 0 -50px;
 }
 
 .menu-desktop ul{
@@ -210,7 +269,6 @@ button{
 	outline: none;
 	color: white;
 	text-transform: uppercase;
-	text-shadow: 0 0 1px rgba(255,255,255,0.1);
 	letter-spacing: 1px;
 	font-weight: 100;
 	-webkit-transition: background 0.3s, box-shadow 0.3s;
@@ -229,6 +287,8 @@ button{
 }
 
 
+
+
 /* END menu desktop*/
 
 
@@ -242,11 +302,11 @@ button{
 }
 
 .container {
-/*	max-width: 55%;*/
-	margin: auto;
-	padding: 8% 5% 5% 5%;
-	min-width: 60%;
-	max-width: 60%;
+	margin: 0 auto;
+	padding: 85px 0 0 0;
+	width: 100%;
+	max-width: 900px;
+/*	max-height: 50%;*/
 }
 
 
@@ -259,28 +319,23 @@ button{
 .scene,
 .layer {
   display: block;
-  height: 100%;
+/*  height: 100%;*/
   width: 100%;
   padding: 0;
   margin: 0;
 }
 
 
-.me{
-    max-width: 600px;
-    padding: 30% 0 0 20%;
-}
-
-.programas{
-    padding-top: 50%;
-}
-
-.nombre{
+.isla{
     padding-top: 10%;
 }
 
 .cloud2{
-    padding: 0 0 0 0;
+/*    padding: 0 0 0 0;*/
+}
+
+.welcome{
+	padding: 5% 0 0 0;
 }
 
 
@@ -289,7 +344,7 @@ button{
 footer{
     z-index: 1;        
     position: fixed;
-    padding: 10px 0px 30px 0px;
+    padding: 10px 0px 0.4em 0px;
     bottom: 0;
     margin: 0 auto;
     width: 100%;
@@ -301,6 +356,95 @@ footer h1{
     color: rgba(0, 0, 0, 0.3);
     letter-spacing: px;
     text-align: center;
+}
+
+
+
+.wraper {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+}
+
+.landing {
+	position: absolute;
+	margin: 0 auto;
+	float: none;
+	max-height: 100%;
+	background-color: red;
+	
+}
+
+.botones {
+	border: none;
+	border-radius: 50%;
+	box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
+	box-sizing: content-box;
+	cursor: pointer;
+	outline: none;
+	padding: 0;
+	pointer-events: auto;
+	position: relative;
+	-webkit-user-drag: none;
+	-webkit-transform: scale(1) rotate(360deg);
+	transform: scale(1) rotate(360deg);
+	-webkit-transition: -webkit-transform 150ms cubic-bezier(.4,0,1,1);
+	transition: transform 150ms cubic-bezier(.4,0,1,1);
+}
+
+.b1 {
+	background-color: #3e3e3e;
+	height: 56px;
+	width: 56px;
+	position: relative;
+	-webkit-transition: all .5s cubic-bezier(.4,0,.2,1);
+	transition: all .5s cubic-bezier(.4,0,.2,1);
+}
+
+.b1:hover{
+	background-color: #fedb31;
+}
+
+.ng {
+	background-size: 24px;
+	display: block;
+	height: 24px;
+	margin: auto;
+	width: 24px;
+	-webkit-user-drag: none;
+}
+
+
+.a01, .b01{
+	left: 0;
+	margin-left: 16px;
+	margin-top: 16px;
+	position: absolute;
+	top: 0;
+	-webkit-transition: all .5s cubic-bezier(.4,0,.2,1);
+	transition: all .5s cubic-bezier(.4,0,.2,1);
+}
+
+
+.a01{
+	visibility: hidden;
+	background-image: url(../images/bt_compose2_2x.png);
+}
+
+.b01{
+	background-image: url(../images/bt_speed_dial_2x.png);
+}
+
+.a01:hover{
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+.b01:hover{
+/*	opacity: 0;*/
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
 }
 
 
